@@ -831,12 +831,12 @@ declare namespace WebdriverIO {
         isLocked(): boolean;
         launch(): Client<T>;
         lock(seconds: number): Client<T>;
-        longPressKeycode(keyCode: string, metaState: string): Client<T>;
+        longPressKeycode(keyCode: string, metaState?: string | number): Client<T>;
         openNotifications(): Client<T>;
         orientation(setTo?: 'landscape' | 'portrait'): 'landscape' | 'portrait';
         performMultiAction(touchAttributes: any): Client<T>;
         performTouchAction(touchAttributes: any): Client<T>;
-        pressKeycode(keyCode: string, metaState: string): Client<T>;
+        pressKeycode(keyCode: string, metaState?: string | number): Client<T>;
         pullFile(path: string): Client<T>;
         pullFolder(path: string): Client<T>;
         pushFile(path: string, data: any): Client<T>;
